@@ -8,27 +8,30 @@
 </head>
 <body>
   <section>
-    <img src="img/mad-lib-happy-face.png" alt="Mad Lib Happy Face" class="smiley">
-    <img src="img/ng-mad-libs-logo.png" alt="Mad Lib Logo" class="logo">
-    <p>Please provide the following words:</p>
-    <input type="text" ng-init="femaleName='Female Name'" ng-model="femaleName" />
-    <input type="text" ng-init="jobTitle='Job Title'" ng-model="jobTitle" />
-    <input type="text" ng-init="tediousTask='Tedious Task'" ng-model="tediousTask" />
-    <input type="text" ng-init="dirtyTask='Dirty Task'" ng-model="dirtyTask" />
-    <input type="text" ng-init="celebrity='Celebrity'" ng-model="celebrity" />
-    <input type="text" ng-init="uselessSkill='Useless Skill'" ng-model="uselessSkill" />
-    <input type="text" ng-init="adjective='Adjective'" ng-model="adjective" />
-    <input type="text" ng-init="obnoxiuousCelebrity='Obnoxiuous Celebrity'" ng-model="obnoxiuousCelebrity" />
-    <input type="text" ng-init="hugeNumber='Huge Number'" ng-model="hugeNumber" />
-
-    <hr>
-
-    <p>
-      <span>{{femaleName}}</span> was a <span>{{jobTitle}}</span> who loved technology. Although she loved parts of her job, she absolutely hated  <span>{{tediousTask}}</span> and <span>{{dirtyTask}}</span>. So, <span>{{femaleName}}</span> met with her life mentor <span>{{celebrity}}</span> who told her to learn how to <span>{{uselessSkill}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{uselessSkill}}</span> so she studied programming instead.
-    </p>
-    <p>
-      What a great decision! With her new skills, <span>{{femaleName}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnoxiuousCelebrity}}</span> that not only loved <span>{{dirtyTask}}</span> but did it <span>{{hugeNumber}}</span> times faster.
-    </p>
+    <div class="header">
+      <img src="img/mad-lib-happy-face.png" alt="Mad Lib Happy Face" class="smiley">
+      <img src="img/ng-mad-libs-logo.png" alt="Mad Lib Logo" class="logo">
+    </div>
+    <div class="input">
+      <p>Please provide the following words:</p>
+      <input type="text" ng-init="femaleName='Female Name'" ng-model="femaleName" />
+      <input type="text" ng-init="jobTitle='Job Title'" ng-model="jobTitle" />
+      <input type="text" ng-init="tediousTask='Tedious Task'" ng-model="tediousTask" />
+      <input type="text" ng-init="dirtyTask='Dirty Task'" ng-model="dirtyTask" />
+      <input type="text" ng-init="celebrity='Celebrity'" ng-model="celebrity" />
+      <input type="text" ng-init="uselessSkill='Useless Skill'" ng-model="uselessSkill" />
+      <input type="text" ng-init="adjective='Adjective'" ng-model="adjective" />
+      <input type="text" ng-init="obnoxiuousCelebrity='Obnoxiuous Celebrity'" ng-model="obnoxiuousCelebrity" />
+      <input type="text" ng-init="hugeNumber='Huge Number'" ng-model="hugeNumber" />
+    </div>
+    <div class="output">
+      <p>
+        <span>{{femaleName}}</span> was a <span>{{jobTitle}}</span> who loved technology. Although she loved parts of her job, she absolutely hated  <span>{{tediousTask}}</span> and <span>{{dirtyTask}}</span>. So, <span>{{femaleName}}</span> met with her life mentor <span>{{celebrity}}</span> who told her to learn how to <span>{{uselessSkill}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{uselessSkill}}</span> so she studied programming instead.
+      </p>
+      <p>
+        What a great decision! With her new skills, <span>{{femaleName}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnoxiuousCelebrity}}</span> that not only loved <span>{{dirtyTask}}</span> but did it <span>{{hugeNumber}}</span> times faster.
+      </p>
+    </div>
   </section>
 
 </body>
