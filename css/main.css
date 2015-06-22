@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(254,255,246);
+}
+
+section {
+  width: 100%;
+  max-width: 576px;
+  margin: 2em auto;
+  border: 2px solid #000;
+  background: #FFFFFF;
+  padding: 1em;
+}
+
+span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p {
+  line-height: 2em;
+}
+
+.smiley {
+  height: 100%;
+  max-height: 116px;
+  width: 100%;
+  max-width: 116px;
+  float: left;
+}
+
+.logo {
+  height: 100%;
+  max-height: 116px;
+  width: 100%;
+  max-width: 460px;
+  float: left;
+}
