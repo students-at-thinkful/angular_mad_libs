@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en" ng-app="madLib" ng-controller="controller">
 <head>
   <meta charset="UTF-8">
   <title>Angular Mad Libs!</title>
   <link rel="stylesheet" href="css/main.css">
   <script data-require="angular.js@1.3.10" data-semver="1.3.10" src="https://code.angularjs.org/1.3.10/angular.js"></script>
+  <script src="js/madLib.js"></script>
 </head>
 <body>
   <section>
@@ -14,15 +15,15 @@
     </div>
     <div class="input">
       <p>Please provide the following words:</p>
-      <input type="text" ng-init="femaleName='Female Name'" ng-model="femaleName" />
-      <input type="text" ng-init="jobTitle='Job Title'" ng-model="jobTitle" />
-      <input type="text" ng-init="tediousTask='Tedious Task'" ng-model="tediousTask" />
-      <input type="text" ng-init="dirtyTask='Dirty Task'" ng-model="dirtyTask" />
-      <input type="text" ng-init="celebrity='Celebrity'" ng-model="celebrity" />
-      <input type="text" ng-init="uselessSkill='Useless Skill'" ng-model="uselessSkill" />
-      <input type="text" ng-init="adjective='Adjective'" ng-model="adjective" />
-      <input type="text" ng-init="obnoxiuousCelebrity='Obnoxiuous Celebrity'" ng-model="obnoxiuousCelebrity" />
-      <input type="text" ng-init="hugeNumber='Huge Number'" ng-model="hugeNumber" />
+      <input type="text" ng-model="femaleName" />
+      <input type="text" ng-model="jobTitle" />
+      <input type="text" ng-model="tediousTask" />
+      <input type="text" ng-model="dirtyTask" />
+      <input type="text" ng-model="celebrity" />
+      <input type="text" ng-model="uselessSkill" />
+      <input type="text" ng-model="adjective" />
+      <input type="text" ng-model="obnoxiuousCelebrity" />
+      <input type="text" ng-model="hugeNumber" />
     </div>
     <div class="output">
       <p>
