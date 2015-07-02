@@ -15,6 +15,13 @@ app.controller('controller', ['$scope', function($scope){
   $scope.outputVisable  = '';
   $scope.gender = '';
 
+  $scope.submit = function(){
+    if( $scope.userSubmit.$valid ) {
+      $scope.switch();
+    } else {
+      alert("Please fill out all of the forms");
+    }
+  }
   $scope.male = function(){
     $scope.check = "male"
     $scope.heShe = 'he';
@@ -32,5 +39,17 @@ app.controller('controller', ['$scope', function($scope){
       $scope.inputVisable = 'visable';
       $scope.outputVisable = '';
     }
+  };
+  $scope.reset = function(){
+    $scope.switch();
+    $scope.data.name = '';
+    $scope.data.jobTitle = '';
+    $scope.data.tediousTask = '';
+    $scope.data.dirtyTask = '';
+    $scope.data.celebrity = '';
+    $scope.data.uselessSkill = '';
+    $scope.data.adjective = '';
+    $scope.data.obnoxiuousCelebrity = '';
+    $scope.data.hugeNumber = '';
   };
 }]);
