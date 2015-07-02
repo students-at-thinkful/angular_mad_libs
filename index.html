@@ -13,25 +13,65 @@
       <img src="img/mad-lib-happy-face.png" alt="Mad Lib Happy Face" class="smiley">
       <img src="img/ng-mad-libs-logo.png" alt="Mad Lib Logo" class="logo">
     </div>
-    <div class="input">
-      <p>Please provide the following words:</p>
-      <input type="text" ng-model="femaleName" />
-      <input type="text" ng-model="jobTitle" />
-      <input type="text" ng-model="tediousTask" />
-      <input type="text" ng-model="dirtyTask" />
-      <input type="text" ng-model="celebrity" />
-      <input type="text" ng-model="uselessSkill" />
-      <input type="text" ng-model="adjective" />
-      <input type="text" ng-model="obnoxiuousCelebrity" />
-      <input type="text" ng-model="hugeNumber" />
-    </div>
-    <div class="output">
-      <p>
-        <span>{{femaleName}}</span> was a <span>{{jobTitle}}</span> who loved technology. Although she loved parts of her job, she absolutely hated  <span>{{tediousTask}}</span> and <span>{{dirtyTask}}</span>. So, <span>{{femaleName}}</span> met with her life mentor <span>{{celebrity}}</span> who told her to learn how to <span>{{uselessSkill}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{uselessSkill}}</span> so she studied programming instead.
-      </p>
-      <p>
-        What a great decision! With her new skills, <span>{{femaleName}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnoxiuousCelebrity}}</span> that not only loved <span>{{dirtyTask}}</span> but did it <span>{{hugeNumber}}</span> times faster.
-      </p>
+    <div>
+      <div class="input {{inputVisable}}">
+        <input type="radio" ng-model="gender" ng-click="male()" value="male">Male</input>
+        <input type="radio" ng-model="gender" ng-click="female()" value="female">Female</input>
+        <p>Please provide the following words:</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>Name:</td>
+              <td><input type="text" ng-model="name" /></td>
+            </tr>
+            <tr>
+              <td>Job Title:</td>
+              <td><input type="text" ng-model="jobTitle" /></td>
+            </tr>
+            <tr>
+              <td>Tedious Task:</td>
+              <td><input type="text" ng-model="tediousTask" /></td>
+            </tr>
+            <tr>
+              <td>Dirty Task:</td>
+              <td><input type="text" ng-model="dirtyTask" /></td>
+            </tr>
+            <tr>
+              <td>Celebrity:</td>
+              <td><input type="text" ng-model="celebrity" /></td>
+            </tr>
+            <tr>
+              <td>Useless Skill:</td>
+              <td><input type="text" ng-model="uselessSkill" /></td>
+            </tr>
+            <tr>
+              <td>Adjective:</td>
+              <td><input type="text" ng-model="adjective" /></td>
+            </tr>
+            <tr>
+              <td>Obnoxiuous Celebrity:</td>
+              <td><input type="text" ng-model="obnoxiuousCelebrity" /></td>
+            </tr>
+            <tr>
+              <td>Huge Number:</td>
+              <td><input type="number" ng-model="hugeNumber" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button ng-click="switch()">SUBMIT</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="output {{outputVisable}}">
+        <p>
+          <span>{{name}}</span> was a <span>{{jobTitle}}</span> who loved technology. Although {{heShe}} loved parts of {{himHer}} job, {{heShe}} absolutely hated  <span>{{tediousTask}}</span> and <span>{{dirtyTask}}</span>. So, <span>{{name}}</span> met with {{himHer}} life mentor <span>{{celebrity}}</span> who told {{himHer}} to learn how to <span>{{uselessSkill}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{uselessSkill}}</span> so {{heShe}} studied programming instead.
+        </p>
+        <p>
+          What a great decision! With {{himHer}} new skills, <span>{{name}}</span> built a(n) <span>{{adjective}}</span> robot named <span>{{obnoxiuousCelebrity}}</span> that not only loved <span>{{dirtyTask}}</span> but did it <span>{{hugeNumber}}</span> times faster.
+        </p>
+        <button ng-click="switch()">RESET</button>
+      </div>
     </div>
   </section>
 

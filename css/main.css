@@ -6,11 +6,13 @@ body {
 
 section {
   width: 100%;
+  height: auto;
   max-width: 576px;
   margin: 2em auto;
   border: 2px solid #000;
   background: #FFFFFF;
   padding: 1em;
+
 }
 
 .header {
@@ -34,21 +36,45 @@ section {
   float: left;
 }
 
-input[type="text"] {
-  width: 32%;
-  float: left;
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 6px;
 }
 
 .input {
-  position: relative;
   width: 100%;
-  height: auto;
+  height: 0;
   padding: 2em 0;
+  opacity: 0;
+  display: block;
+  z-index: 10;
+  transition: opacity 1s, height 1s;
+  overflow: hidden;
+}
+
+table {
+  width: 95%;
+  margin: 2.5%;
+}
+
+td:first-child {
+  width: 30%;
+  text-align: right;
+}
+
+td {
+  padding: 6px;
 }
 
 .output {
   padding: 1em 0;
   clear: both;
+  height: 0;
+  opacity: 0;
+  z-index: 10;
+  transition: opacity 1s, height 1s;
+  overflow: hidden;
 }
 
 p {
@@ -58,4 +84,22 @@ p {
 span {
   font-weight: bold;
   text-decoration: underline;
+}
+
+.button {
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid red;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button:hover {
+  background-color: rgb(207, 94, 199);
+}
+
+.visable {
+  z-index: 100;
+  opacity: 1;
+  height: 515px;
 }
