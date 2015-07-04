@@ -13,8 +13,8 @@
     <div class="header">
       <img src="img/mad-lib-happy-face.png" alt="Mad Lib Happy Face" class="smiley">
       <img src="img/ng-mad-libs-logo.png" alt="Mad Lib Logo" class="logo">
-    </div>
-    <div>
+    </div><!-- - /header - -->
+    <div class="page_wrap">
       <div class="input {{inputVisable}}">
         <input type="radio" ng-model="gender" ng-click="male()" value="male">Male</input>
         <input type="radio" ng-model="gender" ng-click="female()" value="female">Female</input>
@@ -65,7 +65,7 @@
             </tbody>
           </table>
         </form>
-      </div>
+      </div><!-- - /input - -->
       <div class="output {{outputVisable}}">
         <p>
           <span>{{data.name}}</span> was a <span>{{data.jobTitle}}</span> who loved technology. Although {{heShe}} loved parts of {{himHer}} job, {{heShe}} absolutely hated  <span>{{data.tediousTask}}</span> and <span>{{data.dirtyTask}}</span>. So, <span>{{data.name}}</span> met with {{himHer}} life mentor <span>{{data.celebrity}}</span> who told {{himHer}} to learn how to <span>{{data.uselessSkill}}</span> with Thinkful. Thinkful didn't offer a course on <span>{{data.uselessSkill}}</span> so {{heShe}} studied programming instead.
@@ -74,9 +74,8 @@
           What a great decision! With {{himHer}} new skills, <span>{{data.name}}</span> built a(n) <span>{{data.adjective}}</span> robot named <span>{{data.obnoxiuousCelebrity}}</span> that not only loved <span>{{data.dirtyTask}}</span> but did it <span>{{data.hugeNumber}}</span> times faster.
         </p>
         <button ng-click="reset()">RESET</button>
-      </div>
-    </div>
+      </div><!-- - /output - -->
+    </div><!-- - /page_wrap - -->
   </section>
-
 </body>
 </html>

@@ -30,14 +30,6 @@ app.controller('controller', ['$scope', function($scope){
   };
   $scope.reset = function(){
     $scope.switch();
-    $scope.data.name = '';
-    $scope.data.jobTitle = '';
-    $scope.data.tediousTask = '';
-    $scope.data.dirtyTask = '';
-    $scope.data.celebrity = '';
-    $scope.data.uselessSkill = '';
-    $scope.data.adjective = '';
-    $scope.data.obnoxiuousCelebrity = '';
-    $scope.data.hugeNumber = '';
+    $scope.data = '';
   };
 }]);
